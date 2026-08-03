@@ -1304,20 +1304,19 @@ img {
 /* --- Premium Solid Cards --- */
 .horizontal-card {
   display: flex;
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(12px) saturate(180%);
-  -webkit-backdrop-filter: blur(12px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #e2e8e4; /* Soft, premium sage green card color for contrast */
+  border: 1px solid rgba(17, 29, 21, 0.08);
   border-radius: 16px;
   overflow: hidden;
   transition: var(--transition-smooth);
+  box-shadow: 0 10px 30px rgba(17, 29, 21, 0.04);
 }
 
 .horizontal-card:hover {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(213, 178, 99, 0.3);
+  background: #dbe2dd; /* Slightly deeper sage green on hover */
+  border-color: rgba(213, 178, 99, 0.4);
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 45px rgba(17, 29, 21, 0.08);
 }
 
 .horizontal-card-image {
@@ -1364,10 +1363,11 @@ img {
 .horizontal-card-content h3 {
   font-size: 1.8rem;
   margin-bottom: 12px;
+  color: var(--color-green-dark); /* Dark green headings on light background */
 }
 
 .horizontal-card-content p {
-  color: var(--color-light-text);
+  color: var(--color-green-light); /* Readable soft dark green text on light background */
   font-size: 0.95rem;
   margin-bottom: 24px;
   line-height: 1.6;
@@ -1384,7 +1384,7 @@ img {
 
 .curriculum-bullets li {
   font-size: 0.85rem;
-  color: var(--color-light-text);
+  color: var(--color-green-light); /* Readable text on light background */
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1394,6 +1394,37 @@ img {
   color: var(--color-gold);
   font-size: 0.8rem;
 }
+
+/* --- Dark Background Overrides for Horizontal Cards --- */
+.section-dark .horizontal-card,
+.section-dark-bg .horizontal-card {
+  background: #16241c; /* Solid deep forest green */
+  border: 1px solid rgba(213, 178, 99, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.section-dark .horizontal-card:hover,
+.section-dark-bg .horizontal-card:hover {
+  background: #1b2d22; /* Slightly lighter green on hover */
+  border-color: rgba(213, 178, 99, 0.45);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.section-dark .horizontal-card-content h3,
+.section-dark-bg .horizontal-card-content h3 {
+  color: var(--color-white) !important;
+}
+
+.section-dark .horizontal-card-content p,
+.section-dark-bg .horizontal-card-content p {
+  color: var(--color-light-text) !important;
+}
+
+.section-dark .curriculum-bullets li,
+.section-dark-bg .curriculum-bullets li {
+  color: var(--color-light-text) !important;
+}
+
 
 /* Mobile responsive for horizontal cards */
 @media (max-width: 768px) {
