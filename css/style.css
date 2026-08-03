@@ -654,20 +654,7 @@ img {
   }
 }
 
-.power-glass-card {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(12px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 32px 24px;
-  transition: var(--transition-smooth);
-}
-
-.power-glass-card:hover {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(213, 178, 99, 0.3);
-  transform: translateY(-4px);
-}
+/* --- Premium Solid Cards --- */
 
 .power-card-title {
   font-family: var(--font-headings);
@@ -1298,6 +1285,23 @@ img {
   margin: 0 auto;
 }
 
+.power-glass-card {
+  background: #16241c; /* Solid rich dark green */
+  border: 1px solid rgba(213, 178, 99, 0.2);
+  border-radius: 12px;
+  padding: 32px 24px;
+  transition: var(--transition-smooth);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.power-glass-card:hover {
+  background: #1b2d22; /* Slightly lighter solid green on hover */
+  border-color: rgba(213, 178, 99, 0.45);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* --- Premium Solid Cards --- */
 .horizontal-card {
   display: flex;
   background: rgba(255, 255, 255, 0.03);
