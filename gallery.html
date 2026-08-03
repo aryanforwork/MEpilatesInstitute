@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Gallery & Photos | ME Pilates Dehradun</title>
+    <meta name="description" content="Take a visual tour of ME Pilates Institute. View our premium equipment, dynamic classes, and welcoming studio environment in Indira Nagar, Dehradun.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://mepilatesinstitute.com/gallery.html#webpage",
+      "url": "https://mepilatesinstitute.com/gallery.html",
+      "name": "Studio Gallery & Photos | ME Pilates Dehradun",
+      "description": "Take a visual tour of ME Pilates Institute. View our premium equipment, dynamic classes, and welcoming studio environment in Indira Nagar, Dehradun.",
+      "isPartOf": {
+        "@id": "https://mepilatesinstitute.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://mepilatesinstitute.com/gallery.html#breadcrumb"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Visual Masonry Grid Styles */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 3/2;
+            border: 1px solid rgba(213, 178, 99, 0.15);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+            transition: var(--transition-smooth);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            border-color: var(--color-gold);
+            box-shadow: 0 15px 30px rgba(17, 29, 21, 0.15);
+        }
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(17, 29, 21, 0.85) 0%, rgba(17, 29, 21, 0.1) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 24px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        .gallery-overlay h3 {
+            color: var(--color-white);
+            font-size: 1.25rem;
+            margin-bottom: 4px;
+        }
+        .gallery-overlay p {
+            color: var(--color-light-text);
+            font-size: 0.85rem;
+            font-family: var(--font-body);
+        }
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 16px;
+            }
+            .gallery-overlay {
+                opacity: 1;
+                background: linear-gradient(to top, rgba(17, 29, 21, 0.9) 0%, rgba(17, 29, 21, 0.3) 100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Premium Navigation Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="assets/images/logo.png" alt="ME Pilates Institute Logo" class="logo-image">
+            </a>
+            <nav class="site-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="pilates-studio-dehradun.html">Studio</a></li>
+                    <li><a href="pilates-classes-dehradun.html">Classes</a></li>
+                    <li><a href="pilates-teacher-training-dehradun.html">Teacher Training</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact-us.html" class="btn btn-secondary">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <!-- Subpage Hero Section -->
+        <section class="hero-section" style="background-image: url('assets/images/studio_hero.jpg'); min-height: 50vh; padding-top: 140px; padding-bottom: 60px;">
+            <div class="container" style="position: relative; z-index: 2; text-align: center;">
+                <h1 style="color: var(--color-white); font-size: 3.5rem; line-height: 1.1;">Inside Our <span>Studio Gallery</span></h1>
+                <p style="color: var(--color-light-text); font-size: 1.1rem; max-width: 600px; margin: 20px auto 0 auto; font-family: var(--font-body);">Take a virtual tour of Dehradun's finest luxury Pilates and Yoga facility in Indira Nagar.</p>
+            </div>
+        </section>
+
+        <!-- Intro Section (SS2 Split Style) -->
+        <section class="section-padding" style="background-color: var(--color-white);">
+            <div class="container">
+                <div class="section-header" style="max-width: 800px; margin: 0 auto text-align: center;">
+                    <h2>What does a premium Pilates experience look like?</h2>
+                    <p style="margin-top: 16px;">Browse our ME Pilates gallery to see exactly what sets us apart. From the sleek lines of our state-of-the-art Reformers and Cadillacs to the warm, sophisticated lighting that defines our space, every element has been curated to inspire your movement.</p>
+                </div>
+
+                <!-- Masonry Gallery Grid -->
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/images/studio_hero.jpg" alt="Architectural view of Dehradun foothills reformer studio">
+                        <div class="gallery-overlay">
+                            <h3>Studio Foothills View</h3>
+                            <p>Our spacious, state-of-the-art Reformer studio facing the scenic Dehradun mountains.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="assets/images/about_founders.jpg" alt="Founders Palak Sharma and Arya Tyagi standing on the reformer floor">
+                        <div class="gallery-overlay">
+                            <h3>Meet the Founders</h3>
+                            <p>Palak Sharma &amp; Arya Tyagi, 500-hour Yoga Alliance certified leaders inside the studio.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/hero_desktop.jpg" alt="Clean luxury wooden Reformer setup detail">
+                        <div class="gallery-overlay">
+                            <h3>Silent Luxury Reformer</h3>
+                            <p>Custom wooden Reformer frames under soft natural light, built for absolute structural precision.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/reformer_pilates.jpg" alt="Client performing advanced Pilates Reformer core alignment extension">
+                        <div class="gallery-overlay">
+                            <h3>Advanced Extension</h3>
+                            <p>Hands-on clinical biomechanical training focusing on core stability and posture muscle alignment.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/cadillac_pilates.jpg" alt="Close-up Cadillac spring suspension detailing">
+                        <div class="gallery-overlay">
+                            <h3>Cadillac Apparatus</h3>
+                            <p>Spring-loaded suspensions and canopy straps isolating specific muscle groups.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/aerial_yoga.jpg" alt="Yogi practicing suspended inversions in silk hammocks">
+                        <div class="gallery-overlay">
+                            <h3>Aerial Silk Alignment</h3>
+                            <p>Spinal decompression and suspension conditioning in our deep forest green silks.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/classes_hero.jpg" alt="Timber Reformer beds aligned with golden ball focus">
+                        <div class="gallery-overlay">
+                            <h3>Class Equipment Floor</h3>
+                            <p>Sleek timber beds configured with plenty of space for focus and breathing room.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/training_hero.jpg" alt="Student teachers training on reformer floor guided by lead tutor">
+                        <div class="gallery-overlay">
+                            <h3>RYS 200 Teacher Training</h3>
+                            <p>Future educators gaining practical alignment skills in our 200-Hour Certification.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/images/studio_space.jpg" alt="ME Pilates tranquil lounge and reception details">
+                        <div class="gallery-overlay">
+                            <h3>Tranquil Lounge Space</h3>
+                            <p>Frosted glass partitions, natural greens, and warm sand finishes to ground your mind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Banner (SS3 Style) -->
+        <section class="container">
+            <div class="promo-banner" style="background-image: url('assets/images/classes_hero.jpg');">
+                <div class="promo-banner-content" style="max-width: 600px;">
+                    <h2>Join us on the floor</h2>
+                    <p>Experience the visual clarity and high-end environment of ME Pilates Indira Nagar for yourself. Book your introductory session today.</p>
+                    <div class="promo-btn-container">
+                        <a href="contact-us.html#enquiry" class="btn btn-primary">Book Introductory Class</a>
+                        <a href="pricing.html" class="btn btn-secondary">Membership Packages</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section-padding section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Find quick answers regarding our studio visitor policies, photography, and setup.</p>
+                </div>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <h3>Can I take my own Dehradun Pilates studio photos during class?</h3>
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <p>To maintain the privacy and focus of all our clients, we kindly ask that you refrain from taking photos or videos during group classes. You are welcome to take photos in the reception area or before/after your session, provided no other clients are in the frame.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <h3>Is the equipment shown in the ME Pilates gallery available for beginners?</h3>
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Absolutely. All the apparatus featured in our gallery, including the imposing Cadillac, is highly adjustable and is actually used to assist beginners in finding the correct form safely.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <h3>Does the studio look exactly like the photos?</h3>
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <p>Yes, our gallery accurately reflects our immaculate, premium studio space in Indira Nagar. We maintain exceptional standards of cleanliness and aesthetic order at all times.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <h3>Can we rent the studio space for private photo shoots?</h3>
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            <p>The studio is occasionally available for wellness-related commercial shoots outside of our regular class hours. Please contact management directly with your proposal and requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="ME Pilates Institute Logo" class="footer-logo" style="height: 60px; width: auto; margin-bottom: 20px; filter: brightness(0) invert(1);">
+                <p>Dehradun's premier boutique studio offering Reformer Pilates, Cadillac, Specialty Yoga, and RYS 200 Teacher Training certifications.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="pilates-classes-dehradun.html">Classes</a></li>
+                    <li><a href="pilates-studio-dehradun.html">Studio</a></li>
+                    <li><a href="pilates-teacher-training-dehradun.html">Teacher Training</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="pricing.html">Pricing Packages</a></li>
+                    <li><a href="gallery.html">Studio Gallery</a></li>
+                    <li><a href="faq.html">FAQ Hub</a></li>
+                    <li><a href="blog.html">Wellness Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Visit Us</h4>
+                <p><i class="fas fa-map-marker-alt" style="color: var(--color-gold); margin-right: 8px;"></i> C-1/103 Shopping Complex, Above Amway, Near SBI, Indira Nagar Colony, Dehradun</p>
+                <p><i class="fas fa-phone-alt" style="color: var(--color-gold); margin-right: 8px;"></i> +91-8077978450, +91-9012112527</p>
+                <p><i class="fas fa-envelope" style="color: var(--color-gold); margin-right: 8px;"></i> Contact@MEpilatesInstitute.com</p>
+                <p><i class="fas fa-clock" style="color: var(--color-gold); margin-right: 8px;"></i> Mon-Fri: 7:00 AM - 8:00 PM</p>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 ME Pilates Institute. All Rights Reserved.</p>
+            <p>Designed for Premium Wellness</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

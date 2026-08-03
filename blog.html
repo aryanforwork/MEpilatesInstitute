@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Blog | ME Pilates Institute Dehradun</title>
+    <meta name="description" content="Explore Pilates biomechanics, spine rehabilitation, prenatal movement tips, and Yoga philosophy on the official ME Pilates wellness blog.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "ME Pilates Institute Wellness Blog",
+      "description": "Explore Pilates biomechanics, spine rehabilitation, prenatal movement tips, and Yoga philosophy on the official ME Pilates wellness blog.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "ME Pilates Institute"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Blog Layout Styles */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+        .blog-card {
+            background: var(--color-white);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(17, 29, 21, 0.06);
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+        }
+        .blog-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--color-gold);
+            box-shadow: 0 15px 30px rgba(17, 29, 21, 0.08);
+        }
+        .blog-img-wrapper {
+            position: relative;
+            aspect-ratio: 16/10;
+            overflow: hidden;
+        }
+        .blog-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .blog-card:hover .blog-img-wrapper img {
+            transform: scale(1.05);
+        }
+        .blog-tag {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: var(--color-green-dark);
+            color: var(--color-gold);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+        .blog-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .blog-meta {
+            font-size: 0.75rem;
+            color: var(--color-green-light);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .blog-body h3 {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            line-height: 1.25;
+            color: var(--color-green-dark);
+            margin-bottom: 12px;
+        }
+        .blog-body p {
+            font-size: 0.9rem;
+            color: var(--color-green-light);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .blog-readmore {
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            color: var(--color-green-dark);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition-fast);
+        }
+        .blog-readmore:hover {
+            color: var(--color-gold);
+        }
+        .blog-readmore i {
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+        .blog-readmore:hover i {
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Premium Navigation Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="assets/images/logo.png" alt="ME Pilates Institute Logo" class="logo-image">
+            </a>
+            <nav class="site-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="pilates-studio-dehradun.html">Studio</a></li>
+                    <li><a href="pilates-classes-dehradun.html">Classes</a></li>
+                    <li><a href="pilates-teacher-training-dehradun.html">Teacher Training</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact-us.html" class="btn btn-secondary">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <!-- Subpage Hero Section -->
+        <section class="hero-section" style="background-image: url('assets/images/classes_hero.jpg'); min-height: 50vh; padding-top: 140px; padding-bottom: 60px;">
+            <div class="container" style="position: relative; z-index: 2; text-align: center;">
+                <h1 style="color: var(--color-white); font-size: 3.5rem; line-height: 1.1;">Our Wellness <span>Blog</span></h1>
+                <p style="color: var(--color-light-text); font-size: 1.1rem; max-width: 600px; margin: 20px auto 0 auto; font-family: var(--font-body);">Read articles on functional biomechanics, alignment, and movement philosophy by our experts.</p>
+            </div>
+        </section>
+
+        <!-- Master Blog Grid -->
+        <section class="section-padding" style="background-color: var(--color-sand-bg);">
+            <div class="container">
+                <div class="section-header" style="max-width: 800px; margin: 0 auto text-align: center;">
+                    <h2>Insights from our Certified Instructors</h2>
+                    <p style="margin-top: 16px;">We believe education empowers movement. Explore our latest publications on structural core stability and functional alignment.</p>
+                </div>
+
+                <div class="blog-grid">
+                    
+                    <!-- Blog Card 1 -->
+                    <div class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <span class="blog-tag">Pilates Science</span>
+                            <img src="assets/images/reformer_pilates.jpg" alt="Woman performing spinal alignment on wooden reformer">
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">Aug 2, 2026 &bull; By Palak Sharma</div>
+                            <h3>The Anatomy of Core Stability: Why Reformer Pilates Wins</h3>
+                            <p>Discover how spring-loaded resistance trains deep stabilizing pelvic muscles, corrects spinal posture imbalances, and improves functional alignment in daily life.</p>
+                            <a href="#" class="blog-readmore">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 2 -->
+                    <div class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <span class="blog-tag">Specialty Yoga</span>
+                            <img src="assets/images/aerial_yoga.jpg" alt="Suspended silk hammock alignment pose">
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">Jul 28, 2026 &bull; By Arya Tyagi</div>
+                            <h3>Defying Gravity: The Musculoskeletal Benefits of Aerial Yoga</h3>
+                            <p>Explore how suspension in silk hammocks decompresses vertebrate alignment, releases severe joint tension, and strengthens shoulder girdle stabilizing muscles.</p>
+                            <a href="#" class="blog-readmore">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 3 -->
+                    <div class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <span class="blog-tag">Rehabilitation</span>
+                            <img src="assets/images/cadillac_pilates.jpg" alt="Pilates Cadillac table straps and springs details">
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">Jul 15, 2026 &bull; By Palak Sharma</div>
+                            <h3>Functional Strength &amp; Rehab: Rebuilding Your Spine</h3>
+                            <p>A clinical guide to recovering from lumbar imbalances, pelvic instability, and postural chronic alignment pain through progressive Cadillac and Chair sequences.</p>
+                            <a href="#" class="blog-readmore">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Banner (SS3 Style) -->
+        <section class="container">
+            <div class="promo-banner" style="background-image: url('assets/images/studio_hero.jpg');">
+                <div class="promo-banner-content" style="max-width: 600px;">
+                    <h2>Join our community</h2>
+                    <p>Want to start your own transformation? Visit our Indira Nagar boutique studio or register online for our next 200-hour Teacher Training intake.</p>
+                    <div class="promo-btn-container">
+                        <a href="contact-us.html#enquiry" class="btn btn-primary">Book Now</a>
+                        <a href="pilates-teacher-training-dehradun.html" class="btn btn-secondary">Become a Teacher</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="ME Pilates Institute Logo" class="footer-logo" style="height: 60px; width: auto; margin-bottom: 20px; filter: brightness(0) invert(1);">
+                <p>Dehradun's premier boutique studio offering Reformer Pilates, Cadillac, Specialty Yoga, and RYS 200 Teacher Training certifications.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="pilates-classes-dehradun.html">Classes</a></li>
+                    <li><a href="pilates-studio-dehradun.html">Studio</a></li>
+                    <li><a href="pilates-teacher-training-dehradun.html">Teacher Training</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="pricing.html">Pricing Packages</a></li>
+                    <li><a href="gallery.html">Studio Gallery</a></li>
+                    <li><a href="faq.html">FAQ Hub</a></li>
+                    <li><a href="blog.html">Wellness Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Visit Us</h4>
+                <p><i class="fas fa-map-marker-alt" style="color: var(--color-gold); margin-right: 8px;"></i> C-1/103 Shopping Complex, Above Amway, Near SBI, Indira Nagar Colony, Dehradun</p>
+                <p><i class="fas fa-phone-alt" style="color: var(--color-gold); margin-right: 8px;"></i> +91-8077978450, +91-9012112527</p>
+                <p><i class="fas fa-envelope" style="color: var(--color-gold); margin-right: 8px;"></i> Contact@MEpilatesInstitute.com</p>
+                <p><i class="fas fa-clock" style="color: var(--color-gold); margin-right: 8px;"></i> Mon-Fri: 7:00 AM - 8:00 PM</p>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 ME Pilates Institute. All Rights Reserved.</p>
+            <p>Designed for Premium Wellness</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
