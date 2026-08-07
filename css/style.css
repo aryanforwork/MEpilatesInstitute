@@ -1043,11 +1043,23 @@ img {
   font-family: var(--font-headings);
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--color-white);
+  color: var(--color-dark-text);
   transition: var(--transition-fast);
 }
 
 .faq-trigger:hover h3 {
+  color: var(--color-gold-hover);
+}
+
+.section-dark .faq-trigger h3,
+.section-dark-bg .faq-trigger h3,
+.dark .faq-trigger h3 {
+  color: var(--color-white);
+}
+
+.section-dark .faq-trigger:hover h3,
+.section-dark-bg .faq-trigger:hover h3,
+.dark .faq-trigger:hover h3 {
   color: var(--color-gold);
 }
 
