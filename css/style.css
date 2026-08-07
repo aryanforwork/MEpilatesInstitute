@@ -1081,9 +1081,15 @@ img {
 
 .faq-content p {
   padding-top: 16px;
-  color: var(--color-light-text);
+  color: var(--color-dark-text);
   font-size: 0.95rem;
   line-height: 1.7;
+}
+
+.section-dark .faq-content p,
+.section-dark-bg .faq-content p,
+.dark .faq-content p {
+  color: var(--color-light-text);
 }
 
 /* --- Premium Footer --- */
