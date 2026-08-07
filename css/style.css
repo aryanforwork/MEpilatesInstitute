@@ -1651,37 +1651,38 @@ img {
 /* --- Floating Contact Sidebar --- */
 .floating-contact-bar {
   position: fixed;
-  right: 20px;
+  right: 0; /* Sticky flush against the right edge */
   top: 50%;
   transform: translateY(-50%);
   z-index: 1200;
   background: rgba(17, 29, 21, 0.95);
   border: 1px solid rgba(213, 178, 99, 0.25);
-  border-radius: 12px;
-  padding: 10px;
+  border-right: none; /* No border on the screen-attached edge */
+  border-radius: 12px 0 0 12px; /* Rounded only on the left side */
+  padding: 8px; /* Reduced from 10px */
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  gap: 8px; /* Reduced from 12px */
+  box-shadow: -5px 5px 25px rgba(0, 0, 0, 0.35); /* Shadow projecting left */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
 
 .contact-btn {
-  width: 44px;
-  height: 44px;
-  border-radius: 8px;
+  width: 36px; /* Reduced from 44px */
+  height: 36px; /* Reduced from 44px */
+  border-radius: 6px; /* Slightly tighter border radius */
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-white) !important;
-  font-size: 1.3rem;
+  font-size: 1.1rem; /* Reduced from 1.3rem */
   transition: all var(--transition-fast);
   text-decoration: none;
 }
 
 .contact-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) translateX(-2px); /* Moves slightly leftward on hover */
 }
 
 .contact-btn.whatsapp {
@@ -1707,14 +1708,14 @@ img {
 
 @media (max-width: 480px) {
   .floating-contact-bar {
-    right: 10px;
+    right: 0;
     padding: 6px;
-    gap: 8px;
+    gap: 6px;
   }
   .contact-btn {
-    width: 38px;
-    height: 38px;
-    font-size: 1.1rem;
+    width: 32px;
+    height: 32px;
+    font-size: 1.0rem;
   }
 }
 
