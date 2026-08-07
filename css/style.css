@@ -1741,4 +1741,151 @@ img {
   transform: translateY(-2px);
 }
 
+/* --- Premium Style Grid & Cards --- */
+.classes-grid-section {
+  padding: 80px 0;
+  background-color: var(--color-sand-bg);
+}
+
+.classes-grid-section.dark {
+  background-color: var(--color-green-dark);
+  color: var(--color-white);
+}
+
+.classes-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.style-card {
+  background-color: #16251c; /* Solid rich dark green card background */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(213, 178, 99, 0.15);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all var(--transition-smooth);
+}
+
+.style-card-image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* 4:3 Aspect Ratio */
+  overflow: hidden;
+}
+
+.style-card-image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.style-card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.style-card-badge {
+  display: inline-block;
+  align-self: flex-start;
+  background-color: var(--color-gold);
+  color: var(--color-green-dark);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+}
+
+.style-card h3 {
+  font-family: var(--font-headings);
+  color: var(--color-gold);
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.style-card p {
+  color: var(--color-white);
+  opacity: 0.85;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  flex-grow: 1;
+  font-family: var(--font-body);
+}
+
+.style-card .btn-card {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--color-gold);
+  color: var(--color-green-dark) !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 20px; /* Pill button shape */
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  border: 1px solid var(--color-gold);
+  margin-top: auto;
+}
+
+.style-card .btn-card:hover {
+  background-color: transparent;
+  color: var(--color-gold) !important;
+  transform: translateY(-2px);
+}
+
+/* Hover effects for the whole card */
+.style-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-gold);
+  box-shadow: 0 15px 35px rgba(213, 178, 99, 0.15);
+}
+
+.style-card:hover .style-card-image-wrapper img {
+  transform: scale(1.06);
+}
+
+.classes-cross-link {
+  margin-top: 60px;
+  text-align: center;
+  padding: 32px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px dashed rgba(213, 178, 99, 0.3);
+  border-radius: 8px;
+}
+
+.classes-cross-link p {
+  font-family: var(--font-headings);
+  font-size: 1.2rem;
+  color: var(--color-white);
+  margin-bottom: 12px;
+}
+
+.classes-cross-link a {
+  color: var(--color-gold);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-gold);
+  transition: var(--transition-fast);
+}
+
+.classes-cross-link a:hover {
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
 

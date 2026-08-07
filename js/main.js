@@ -2,6 +2,43 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     
+    // 0. Pre-fill Enquiry Form based on URL Query Parameters (Register Now clicks)
+    const urlParams = new URLSearchParams(window.location.search);
+    const interest = urlParams.get('interest');
+    const interestDropdown = document.getElementById('interest');
+    
+    if (interestDropdown && interest) {
+        // Try to find direct option match
+        let matchedOption = Array.from(interestDropdown.options).find(opt => 
+            opt.value === interest || opt.value.toLowerCase() === interest.toLowerCase()
+        );
+        
+        // Try partial match if no direct match
+        if (!matchedOption) {
+            matchedOption = Array.from(interestDropdown.options).find(opt => 
+                interest.toLowerCase().includes(opt.value.toLowerCase()) ||
+                opt.value.toLowerCase().includes(interest.toLowerCase())
+            );
+        }
+        
+        // Fallbacks for category routing
+        if (!matchedOption) {
+            if (interest.includes('yoga') || interest.includes('traditional') || interest.includes('power') || interest.includes('bungee') || interest.includes('aerial') || interest.includes('wheel') || interest.includes('belt') || interest.includes('chair') || interest.includes('iyengar') || interest.includes('circuit')) {
+                matchedOption = Array.from(interestDropdown.options).find(opt => 
+                    opt.value === 'classes' || opt.value === 'aerial'
+                );
+            } else {
+                matchedOption = Array.from(interestDropdown.options).find(opt => 
+                    opt.value === 'classes' || opt.value === 'reformer'
+                );
+            }
+        }
+        
+        if (matchedOption) {
+            interestDropdown.value = matchedOption.value;
+        }
+    }
+    
     // 1. Shrink Header Fallback (for browsers lacking native CSS scroll timeline support)
     const header = document.querySelector('.site-header');
     
